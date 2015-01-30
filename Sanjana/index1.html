@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script>
+			function sendRequest()
+			{
+				xhr = new XMLHttpRequest();
+				xhr.open("GET", "../cgi-bin/linkedinTest.py?username="+document.getElementById("username").value, true);
+				xhr.onreadystatechange = getResponse;
+				xhr.send();
+			}	
+			
+			function getResponse()
+			{
+				if(xhr.readyState == 4 && xhr.status == 200)
+				{
+					divel = document.getElementById("random_div");
+					divel.innerHTML += "<p>"+xhr.responseText+"</p>";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div id="random_div">
-			<form action="../cgi-bin/linkedinCGI.py" method="post">
+			<!-- <form action="../cgi-bin/linkedinTest.py" method="post"> -->
 				<input type="text" name="username" id="username" value="https://www.linkedin.com/in/ravisvi"></input>
-				<input type="submit" name="submit" value="Get information"/>
-			</form>
+				<!-- <input type="submit" name="submit" value="Get information"/> -->
+				<input type="button" id="submit" name="submit" onclick="sendRequest()" value="Submit">	</input>
+			<!-- </form> -->
+		</div>
+		<div id="test">
+			This is a random div
 		</div>
 	</body>
 </html>

@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import oauth2 as oauth
 import time
-import cgi, os
+import cgi, os, sys
 import smtplib
 import cgitb; cgitb.enable()
 
@@ -177,10 +177,15 @@ message = final_out.encode("utf-8")
 
 # you can also do a file read and print the file where the file is the html file you want
 
+'''
 print """\
 Content-Type: text/html\n
 <html><body>
 <p>%s</p>
 </body></html>
 """ % (message,)
+'''
 
+sys.stdout.write("Content-Type: text\html")
+sys.stdout.write("\n\n")
+sys.stdout.write(message)
