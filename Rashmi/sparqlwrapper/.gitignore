@@ -1,0 +1,6 @@
+*~
+*.pyc
+SPARQLWrapper.egg-info
+build
+dist
+doc

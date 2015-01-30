@@ -1,0 +1,6 @@
+
+in: http://dbpedia.org/sparql
+
+PREFIX dbres: <http://dbpedia.org/resource/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?o where {dbres:Apple rdf:type ?o} LIMIT 10

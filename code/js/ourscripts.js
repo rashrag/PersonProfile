@@ -1,0 +1,1 @@
+$(".panel-default").click(function(){console.log("clicked"); $(this).find('.list-group:first').toggle()});

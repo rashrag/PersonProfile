@@ -1,0 +1,1 @@
+$('panel-body').click(function(){alert("clicked");});

@@ -1,0 +1,43 @@
+General: login
+General:  id
+General:  avatar_url
+General:  gravatar_id
+General:  url
+General:  html_url
+Popularity:followers_url
+Popularity: following_url https://api.github.com/users/rashrag/following{/other_user},
+Tech_Interests:  gists_url: https://api.github.com/users/rashrag/gists{/gist_id},
+Tech_Interests:  starred_url: https://api.github.com/users/rashrag/starred{/owner}{/repo},
+Tech_Interests:  subscriptions_url: https://api.github.com/users/rashrag/subscriptions,
+Tech_Interests: organizations_url: https://api.github.com/users/rashrag/orgs,
+Projects: repos_url
+Technical: events_url
+Technical:received_events_url
+General:  type
+General: site_admin
+General:name
+General: company
+General:blog
+General: location
+General: email
+General:hireable
+General: bio
+Technical/Projects: public_repos: 15
+Technical/Projects: public_gists
+Popularity: followers
+Tech_Interests:
+General:created_at
+General:updated_at
+Technical:type
+Technical:actor
+Technical/General:name
+Technical:payload
+Technical:size
+Technical: distinct_size
+Technical: ref
+Technical:  head
+Technical:  before
+Technical: commits 
+Technical:  author
+Technical:   message
+Technical:  distinct
